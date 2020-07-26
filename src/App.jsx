@@ -12,7 +12,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="/"
+          href="#"
           rel="noopener noreferrer"
         >
           Md Irshad Portfolio
