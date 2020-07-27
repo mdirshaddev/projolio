@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7412a521.chunk.css",
-    "main.js": "/portfolio/static/js/main.f63f0db5.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f63f0db5.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1cbc4f36.chunk.css",
+    "main.js": "/portfolio/static/js/main.da35c1a7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.da35c1a7.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.4c736102.chunk.js": "/portfolio/static/js/2.4c736102.chunk.js",
-    "static/js/2.4c736102.chunk.js.map": "/portfolio/static/js/2.4c736102.chunk.js.map",
+    "static/css/2.99e16b1d.chunk.css": "/portfolio/static/css/2.99e16b1d.chunk.css",
+    "static/js/2.f8d0d229.chunk.js": "/portfolio/static/js/2.f8d0d229.chunk.js",
+    "static/js/2.f8d0d229.chunk.js.map": "/portfolio/static/js/2.f8d0d229.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.35ad1f8f732a213730fed09553e3fe40.js": "/portfolio/precache-manifest.35ad1f8f732a213730fed09553e3fe40.js",
+    "precache-manifest.c7c548e2844ef71cbf2e4aae426a3e05.js": "/portfolio/precache-manifest.c7c548e2844ef71cbf2e4aae426a3e05.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.7412a521.chunk.css.map": "/portfolio/static/css/main.7412a521.chunk.css.map",
-    "static/js/2.4c736102.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4c736102.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/portfolio/static/media/logo.5d5d9eef.svg"
+    "static/css/2.99e16b1d.chunk.css.map": "/portfolio/static/css/2.99e16b1d.chunk.css.map",
+    "static/css/main.1cbc4f36.chunk.css.map": "/portfolio/static/css/main.1cbc4f36.chunk.css.map",
+    "static/js/2.f8d0d229.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f8d0d229.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/portfolio/static/media/abs.aea82469.jpg",
+    "static/media/font-awesome.css": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/trust.jpg": "/portfolio/static/media/trust.a833ef00.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.4c736102.chunk.js",
-    "static/css/main.7412a521.chunk.css",
-    "static/js/main.f63f0db5.chunk.js"
+    "static/css/2.99e16b1d.chunk.css",
+    "static/js/2.f8d0d229.chunk.js",
+    "static/css/main.1cbc4f36.chunk.css",
+    "static/js/main.da35c1a7.chunk.js"
   ]
 }

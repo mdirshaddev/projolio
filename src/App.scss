@@ -2,66 +2,171 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
+}
+
+body{
+  background: url(./images/abs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header{
-  width: 100%;
   display: flex;
-  background: url('./images/test.jpg');
-  height: 400px;
-  justify-content: space-between;
-  // border-radius: 0 0 50% 50%;
-}
-
-header .logo{
-  margin-left: 80px;
-  margin-right: 20px;
-  margin-top: 10px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 header .logo .firsttext{
-  color: white;
+  color: rgb(4, 7, 4);
 }
 
 header .logo .lasttext{
-  color: #0cf33e;
+  color: rgb(156, 156, 1);
 }
 
-header .nav-links nav ul{
+.nav-links nav ul li{
   list-style: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.nav-links nav ul li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(1, 73, 57);
+  font-size: 18px;
+}
+
+.nav-links nav ul{
+  display: flex;
+  padding-top: 5px;
+}
+
+header .authenticate{
+  display: flex;
+  padding-top: 5px;
+}
+
+header .authenticate .same{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header .authenticate .login{
+  color: rgb(87, 163, 91);
+  cursor: pointer;
+}
+
+header .authenticate .register{
+  color: rgb(10, 167, 240);
+  background: rgb(253, 253, 251);
+  cursor: pointer;
+}
+
+%img-style{
+  width: 200px;
+  height: 280px;
+}
+
+.customAboutCard{
+  background: whitesmoke;
+  width: 700px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 15%);
+  border: 1px solid grey;
+  box-shadow: 0 3px 7px 0px;
+  border-radius: 2px;
   display: flex;
   justify-content: space-around;
-  margin-right: 100px;
-  margin-left: 20px;
-  margin-top: 10px;
 }
 
-header .nav-links nav ul li{
-  margin: 5px;
+.customAboutCard .left-side{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10%,7%);
 }
 
-header .nav-links nav ul li a{
-  text-decoration: none;
-  color: rgb(248, 250, 248);
-  padding: 15px;
-  font-weight: 600;
-  font-family: sans-serif;
-  align-items: center;
-  text-align: center;
-  position: relative;
+.customAboutCard .right-side{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 15%);
 }
 
-header .nav-links nav ul li a::before{
+.customAboutCard .right-side::before{
   content: '';
   position: absolute;
-  width: 100%;
-  top: 35px;
-  border-top: 5px solid green;
+  background-color: black;
+  left: -38px;
+  top: 0;
+  height: 280px;
+  width: 1px;
+  transform: translate(0%,-2%);
 }
 
+.customAboutCard .right-side .heading-text h2{
+  font-weight: 200;
+  font-size: 36px;
+}
 
-header .nav-links nav ul li a::before:hover{
-  border-top: 5px solid green;
-  animation: background ease 1s;
+.customAboutCard .right-side .heading-text p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+  color: rgb(112, 112, 112);
+}
+
+.customAboutCard .right-side .heading-text .nametext{
+  font-weight: 500;
+}
+
+.separator{
+  width: 100%;
+  border: 1px solid rgb(3, 3, 3);
+  height: 1px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.left-side .border-image img{
+  @extend %img-style;
+  box-shadow: 2px 2px 2px 2px rgb(114, 111, 111);
+}
+
+.customAboutCard .box{
+  background: #7cc93f;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  box-shadow: 0 0 2px 0;
+}
+
+.weight{
+  font-weight: 700;
+}
+
+th, td{
+  text-align: start;
+}
+
+.distance{
+  padding-left: 10px;
+}
+
+.box{
+  text-align: center;
+}
+
+.box a{
+  text-decoration: none;
+  color: white;
+}
+
+.box a i{
+  font-size: 50px;
+  padding: 15px;
 }

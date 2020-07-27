@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
+import CardInfo from './components/InfoCard';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
 
 export default class App extends React.Component{
@@ -9,7 +10,7 @@ export default class App extends React.Component{
       <Router>
         <Navbar/>
         <br/>
-        {/* <Route path="/" exact component={} /> */}
+        <Route path="/" component={CardInfo} />
       </Router>
     )
   }
