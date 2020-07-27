@@ -40,10 +40,11 @@ export default class CardInfo extends React.Component{
                   </table>
                 </div>
               <div className="box">
-                <a href="https://github.com/mdirshaddev/" target="_blank"><i className="fa fa-github"></i></a>
-                <a href="#"><i className="fa fa-instagram"></i></a>
+                <a href="https://github.com/mdirshaddev/" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
                 <a href="#"><i className="fa fa-twitter"></i></a>
+                <a href="#"><i className="fa fa-dribbble"></i></a>
                 <a href="https://www.facebook.com/mdirshaddev"><i className="fa fa-facebook"></i></a> 
+                <a href="#"><i className="fa fa-instagram"></i></a>
                 <a href="#"><i className="fa fa-youtube"></i></a>
               </div>
             </div>
