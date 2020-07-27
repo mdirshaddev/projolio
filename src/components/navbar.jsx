@@ -1,32 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends React.Component{
     render(){
         return(
-            <header>
-                <div className="logo">
-                    <h2 className="firsttext">Irshad's<span className="lasttext">Portfolio</span></h2>
-                </div>
-                <div className="nav-links">
-                    <nav>
-                        <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/">Resume</a></li>
-                        <li><a href="/">Portfolio</a></li>
-                        <li><a href="/">Blog</a></li>
-                        <li><a href="/">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div className="authenticate">
-                    <div className="same login">
-                        <h3>Want to Hire</h3>
-                    </div>
-                    <div className="same register">
-                        <h3>Me</h3>
-                    </div>
-                </div>
-            </header>
+            <div className="header">
+                <h2 className="logo">Irshad's Portfolio</h2>
+                <input type="checkbox" id="chk"/>
+                <label htmlFor="chk" className="show-menu-btn">
+                  <i className="fa fa-ellipsis-h"></i>
+                </label>
+                <ul className="menu">
+                  <Link to="/">Home</Link>
+                  <Link to="/about">About</Link>
+                  <Link to="/resume">Resume</Link>
+                  <Link to="/blog">Blog</Link>
+                  <Link to="/contact">Contact</Link>
+                  <label htmlFor="chk" className="hide-menu-btn">
+                    <i className="fa fa-times"></i>
+                  </label>
+                </ul>
+            </div>
         )
     }
 }

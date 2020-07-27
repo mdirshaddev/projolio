@@ -9,8 +9,7 @@ export default class App extends React.Component{
     return(
       <Router>
         <Navbar/>
-        <br/>
-        <Route path="/" component={CardInfo} />
+        <Route path="/about" exact component={CardInfo} />
       </Router>
     )
   }
