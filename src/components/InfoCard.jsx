@@ -1,4 +1,6 @@
 import React from 'react';
+import i from '../images/abs.jpg';
+
 export default class CardInfo extends React.Component{
     render(){
         return(
