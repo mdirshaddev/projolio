@@ -11,7 +11,7 @@ export default class Navbar extends React.Component{
                     <a href="#twitter"><i className="fa fa-twitter"></i></a>
                     <a href="#facebook"><i className="fa fa-facebook"></i></a>
                     <a href="#dribble"><i className="fa fa-dribbble"></i></a>
-                    <a href="#instagram"><i className="fa fa-instagram"></i></a>
+                    <a href="#stackoverflow"><i className="fa fa-stack-overflow"></i></a>
                   </ul>
                 </div>
                 <div className="routes">
