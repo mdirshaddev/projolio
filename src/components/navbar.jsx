@@ -17,7 +17,7 @@ export default class Navbar extends React.Component{
                 <div className="routes">
                   <nav>
                     <ul>
-                      <li><a href="/about" className="active">About</a></li>
+                      <li><a href="#about" className="active">About</a></li>
                       <li><a href="#projects">Projects</a></li>
                       <li><a href="#resume">Resume</a></li>
                       <li><a href="#talks">Talks</a></li>
