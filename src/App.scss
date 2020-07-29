@@ -105,7 +105,7 @@
 .container .content{
   display: flex;
   justify-content: space-evenly;
-  margin: 0 90px;
+  margin: 0 auto;
   padding: 48px 10px;
 }
 
@@ -225,6 +225,26 @@
     text-align: center;
     padding: auto;
     margin: auto;
+  }
+  .info-side .hire-btn{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 200px){
+  .info-side{
+    display: grid;
+    padding: auto;
+    text-align: center;
+  }
+  .fname, .intro{
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+  .img-side .blue-box{
+    width: auto;
+    height: auto;
   }
   .info-side .hire-btn{
     margin-left: 20px;
