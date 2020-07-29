@@ -106,15 +106,15 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
-  padding: 48px 10px;
+  padding: 45px 0px;
 }
 
 .content .img-side .blue-box{
   background: blanchedalmond;
   width: 240px;
   height: 240px;
-  margin: 0 48px;
-  border-radius: 3px;
+  border-radius: 50%;
+  margin: 0 50px;
 }
 
 .content .info-side .intro{
@@ -143,7 +143,8 @@
 }
 
 .info-side{
-  margin: 2px 2px;
+  margin: 2px 20px 0 0;
+  padding: 0px 10px 0px 0px;
   display: grid;
 }
 
@@ -168,7 +169,10 @@
   visibility: hidden;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 950px){
+  .text-info{
+    padding: 0 30px 0 30px;
+  }
   .routes{
     display: none;
   }
@@ -177,6 +181,12 @@
   }
   .show-menu-btn{
     display: block;
+  }
+  .info-side .hire-btn{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
   }
   .show-btn{
     display: block;
@@ -210,16 +220,25 @@
     flex-direction: column;
   }
   .container{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+  }
+  .info-side{
+    padding: 0;
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 899px){
+@media screen and (max-width: 768px){
+  .text-info{
+    padding: 0 30px 0 30px;
+  }
   .info-side{
     display: grid;
     padding: auto;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
   }
   .fname, .intro{
     text-align: center;
