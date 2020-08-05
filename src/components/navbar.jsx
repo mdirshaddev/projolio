@@ -1,5 +1,14 @@
 import React from 'react';
 
+const Links = ({link,font}) => (
+  <a href={link}><i className={font}></i></a>
+)
+
+const LinkList = ({link, text}) => (
+  <li><a href={link}>{text}</a></li>
+)
+
+
 export default class Navbar extends React.Component{
     render(){
         return(
@@ -7,22 +16,22 @@ export default class Navbar extends React.Component{
               <div className="holdings">
                 <div className="sociallinks">
                   <ul>
-                    <a href="#github"><i className="fa fa-github"></i></a>
-                    <a href="#twitter"><i className="fa fa-twitter"></i></a>
-                    <a href="#facebook"><i className="fa fa-facebook"></i></a>
-                    <a href="#dribble"><i className="fa fa-dribbble"></i></a>
-                    <a href="#stackoverflow"><i className="fa fa-stack-overflow"></i></a>
+                    <Links link="#github" font="fa fa-github" />
+                    <Links link="#twitter" font="fa fa-twitter" />
+                    <Links link="#facebook" font="fa fa-facebook" />
+                    <Links link="#dribble" font="fa fa-dribbble" />
+                    <Links link="stackoverflow" font="fa fa-stack-overflow" />
                   </ul>
                 </div>
                 <div className="routes">
                   <nav>
                     <ul>
                       <li><a href="#about" className="active">About</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#resume">Resume</a></li>
-                      <li><a href="#talks">Talks</a></li>
-                      <li><a href="#blog">Blog</a></li>
-                      <li><a href="#contact">Contact</a></li>
+                      <LinkList link="#projects" text="Projects" />
+                      <LinkList link="resume" text="Resume" />
+                      <LinkList link="#talks" text="Talks" />
+                      <LinkList link="#blog" text="Blog" />
+                      <LinkList link="#contacts" text="Contacts" />
                       <li>
                         <a href="#pages">Pages</a>
                         <div className="drop-menu">
