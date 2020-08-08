@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,*::before,*::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root{
+  --font: 'Roboto', sans-serif;
 }
 
 %pos-abs-tl{
@@ -34,7 +40,7 @@
   line-height: 20px;
   padding: 5px 10px;
   font-size: 20px;
-  border-radius: 50%;
+  border-radius: 5px;
   transition: .4s ease;
   // overflow: hidden;
 }
@@ -67,7 +73,7 @@
   margin: 3px 5px;
   padding: 5px;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font);
   transition: .2s linear;
   position: relative;
 }
@@ -79,11 +85,12 @@
   padding: 8px;
   line-height: 20px;
   font-weight: 550;
+  overflow: hidden;
 }
 
 .routes nav ul li .active{
   color: white;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .routes nav ul li .active:hover{
@@ -101,12 +108,13 @@
   background: rgba(14, 146, 223, 0.719);
   width: 100%;
   height: 340px;
+  overflow: hidden;
 }
 
 .container .content{
   display: flex;
   justify-content: space-evenly;
-  margin: 0 25px;
+  margin: 0 100px;
   padding: 45px 0px;
 }
 
@@ -138,9 +146,16 @@
   margin: 0 0 25px;
   color: whitesmoke;
   text-align: justify;
+  line-height: 20px;
+  font-weight: 400;
 }
 .text-info a{ 
   text-decoration: none;
+  color: #0a65af;
+}
+
+.text-info a:hover{
+  text-decoration: underline;
 }
 
 .info-side{
@@ -158,6 +173,7 @@
   background: #06508b;
   border-radius: 5px;
   transition: .5s ease;
+  margin-bottom: 45px;
 }
 
 .hire-btn:hover{
@@ -170,9 +186,115 @@
   visibility: hidden;
 }
 
-@media screen and (max-width: 950px){
+.skill-section{
+  padding: 48px 0;
+  font-family: --var(--font);
+  font-weight: 400;
+}
+
+section{
+  margin: 0 100px;
+  padding: 0 15px;
+}
+
+.skills-row{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list-style li{
+  list-style: none;
+}
+
+section .overview{
+  margin: auto;
+  text-align: center;
+}
+
+section .overview h1{
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+section .overview .detail-overview{
+  margin: 0 150px 40px;
+  text-align: center;
+  justify-content: space-evenly;
+  color: #797878;
+}
+
+section .overview .detail-overview a{
+  color: #0a65af;
+  text-decoration: #0a65af;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.skills-row{
+  padding: 10px 0;
+  height: 350px;
+}
+
+.card{
+  margin: 15px;
+  padding: 30px 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075) !important;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-content{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.card-content .card-head, .card-content .card-body h2{
+  text-align: center;
+}
+
+.card-body h2{
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.card-content .card-head{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  transform: translateY(-70px);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: #52b1e8;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+
+.column ul li{
+  margin-bottom: 8px;
+}
+
+.list-style li i{
+  margin-right: 8px;
+  color: rgb(29, 185, 233);
+}
+
+
+@media screen and (max-width: 960px){
   .text-info{
     padding: 0 30px 0 30px;
+    text-align: center;
   }
   .routes{
     display: none;
@@ -228,6 +350,21 @@
     padding: 0;
     margin: 0;
   }
+  .container .content{
+    margin: 0 45px;
+  }
+  .skill-section{
+    width: 100%;
+    background: rgba(255,255,255,0.5);
+    height: 1300px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    transform: translateY(100%);
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -250,6 +387,9 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+  .container .content{
+    margin: 0 45px;
+  }
 }
 @media screen and (max-width: 200px){
   .info-side{
@@ -270,6 +410,9 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+  .container .content{
+    margin: 0 5px;
+  }
 }
 
 //section
@@ -279,20 +422,3 @@
   height: 500px;
 }
 
-section{
-  padding: 10px;
-}
-
-.skills-row{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.list-style li{
-  list-style: none;
-}
-
-.overview{
-  margin: auto;
-  text-align: center;
-}
