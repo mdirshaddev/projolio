@@ -1,0 +1,116 @@
+// Here you will get only those css properties which are being used by header 
+/************start*************************/
+
+@mixin customFontHandle{
+    font-size: 15px;
+    line-height: 3.3rem; //for adjusting font in the middle
+    align-items: center;
+}
+
+// Blue color container and height adjusting
+.background_blue {
+    background-color: $backColor;
+    height: auto;
+    box-shadow: -1px 5px 3px rgba(158, 158, 158, 0.37);
+}
+
+// to contain navigation links
+.container-fluid{
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Navigation 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+// Social links
+.social{
+    &-links{
+        color: rgb(255, 255, 255);
+        font-family: 'inter', 'oxygen', sans-serif;
+        font-size: 25px;   
+    }
+    &-links i{
+        margin: 5px;
+        padding: 5px 8px;
+        transition: ease 0.4s;
+    }
+    &-links i:hover{
+        color: rgb(1, 225, 241);
+        border-bottom: 4px solid lightgreen;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &-list-item{
+        padding-left: 10px;
+    }
+    &-list-item:not(:last-child){
+        padding-right: 10px;
+    }
+    @include customFontHandle();
+
+}
+
+// toggle-button shows up on mobile size
+.menu{
+    &-show-btn{
+        display: none;
+    }
+    &-hide-btn{
+        display: none;
+    }
+}
+
+// to set nav links
+.nav{
+    &-links{
+        text-decoration: none;
+        font-family: 'oxygen', sans-serif;
+        color: white;
+        font-size: 20px;
+        transition: ease 0.4s;
+        margin: auto;
+        padding: 5px;
+        transition: ease 0.3s;
+    }
+    &-links-hover:hover{
+        color: rgb(1, 225, 241);
+        border-radius: 3%;
+        border-bottom: 4px solid lightgreen;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &-list-item{
+        padding-left: 20px;
+    }
+    &-list-item:not(:last-child){
+        padding-right: 10px;
+    }
+    @include customFontHandle();
+}
+
+// this applies to both social and navlinks
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#hire{
+    padding: 0.1rem 0.3rem;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-radius: 2%;
+    color: #3b3b3b;
+    &:hover{
+        box-shadow: 1px 0px 4px rgb(145, 144, 144);
+        color: rgb(14, 17, 247);
+        border-top: 3px solid rgb(245, 198, 111);
+        border-bottom: 3px solid rgb(245, 198, 111);
+    }
+}
+
+/***************end*******************/
