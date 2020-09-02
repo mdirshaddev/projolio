@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2108ba8c.chunk.css",
-    "main.js": "/portfolio/static/js/main.ff7c7aff.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ff7c7aff.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.d1b6e541.chunk.css",
+    "main.js": "/portfolio/static/js/main.f5863c4a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f5863c4a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/css/2.99e16b1d.chunk.css": "/portfolio/static/css/2.99e16b1d.chunk.css",
-    "static/js/2.d8750851.chunk.js": "/portfolio/static/js/2.d8750851.chunk.js",
-    "static/js/2.d8750851.chunk.js.map": "/portfolio/static/js/2.d8750851.chunk.js.map",
+    "static/js/2.275528ce.chunk.js": "/portfolio/static/js/2.275528ce.chunk.js",
+    "static/js/2.275528ce.chunk.js.map": "/portfolio/static/js/2.275528ce.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.7f4ac643f99015dbc6e94786f6934168.js": "/portfolio/precache-manifest.7f4ac643f99015dbc6e94786f6934168.js",
+    "precache-manifest.6ab33405608c88efd5bd53f060f3f57a.js": "/portfolio/precache-manifest.6ab33405608c88efd5bd53f060f3f57a.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/2.99e16b1d.chunk.css.map": "/portfolio/static/css/2.99e16b1d.chunk.css.map",
-    "static/css/main.2108ba8c.chunk.css.map": "/portfolio/static/css/main.2108ba8c.chunk.css.map",
-    "static/js/2.d8750851.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d8750851.chunk.js.LICENSE.txt",
-    "static/media/abs.jpg": "/portfolio/static/media/abs.aea82469.jpg",
-    "static/media/font-awesome.css": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff"
+    "static/css/main.d1b6e541.chunk.css.map": "/portfolio/static/css/main.d1b6e541.chunk.css.map",
+    "static/js/2.275528ce.chunk.js.LICENSE.txt": "/portfolio/static/js/2.275528ce.chunk.js.LICENSE.txt",
+    "static/media/bars.svg": "/portfolio/static/media/bars.79255eae.svg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.0fe25877.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/css/2.99e16b1d.chunk.css",
-    "static/js/2.d8750851.chunk.js",
-    "static/css/main.2108ba8c.chunk.css",
-    "static/js/main.ff7c7aff.chunk.js"
+    "static/js/2.275528ce.chunk.js",
+    "static/css/main.d1b6e541.chunk.css",
+    "static/js/main.f5863c4a.chunk.js"
   ]
 }
