@@ -1,8 +1,20 @@
 import React from 'react';
 import bar from '../../icons/bars.svg';
 import '../../scss/header.scss';
+import i from '../../images/profile.jpg';
 
-const HeaderLayout = () => {
+class HeaderLayout extends React.Component{
+  constructor(props){
+    super(props);
+    this.buttonToggle = this.buttonToggle.bind(this);
+    this.state = {
+      buttonClick : true
+    }
+  }
+  buttonToggle=(prevState)=>{
+    this.setState((prevState)=> ({buttonClick: !prevState.buttonClick}));
+  }
+  render(){
   return(
     <header className="header">
       <div className="color">
@@ -36,11 +48,11 @@ const HeaderLayout = () => {
                   </a>
                 </li>
               </ul>
-              <button className="toggle-btn">
-              <span className="button" style={{backgroundColor: 'white'}}><img src={bar} alt=""/></span>
+              <button className="toggle-btn" onClick={this.buttonToggle}>
+              <span className="button"><img src={bar} alt=""/></span>
             </button>
             </div>
-            <div className="collapseNavBar">
+            <div className={this.state.buttonClick ? "show collapseNavBar" : "collapseNavBar"}>
               <ul className="link">
                 <li className="list">
                   <a href="/" className="active">
@@ -88,8 +100,24 @@ const HeaderLayout = () => {
           </nav>
         </div>
       </div>
+      <div className="intro">
+        <div className="container">
+          <div className="profile">
+            <img src={i} alt=""/>
+            <div className="textAboutMe">
+              <div className="lead">Hello, My name is </div>
+              <h2>Md Irshad</h2>
+              <div className="bio">
+                I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I write about web development on <a href="/">my blog</a> and regularly <a href="/">speak</a> at various web conferences and meetups. Want to know I may help your protect? Check out my project <a href="/">case studies</a> and <a href="/">resume</a>. 
+              </div>
+              <a href="/" className="hireme-btn">Hire me</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   )
+}
 }
 
 export default HeaderLayout;

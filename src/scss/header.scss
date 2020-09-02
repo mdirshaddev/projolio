@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 .header{
   & .color{
@@ -16,6 +16,7 @@
         -webkit-box-align: center;
         align-items: center;
         flex-wrap: wrap;
+        transition: 0.5s linear;
 
         & .head{
           .social{
@@ -24,6 +25,7 @@
             & .list{
               display: inline-block;
               margin-right: .5rem;
+              transition: 0.8s linear;
               
               & a{
                 width: 36px;
@@ -53,11 +55,14 @@
           }
         }
 
-        & .head .toggle-btn{
-          border: none;
-          background: transparent;
-          display: none;
-          opacity: 0;
+        & .head{
+          .toggle-btn{
+            border: none;
+            background: transparent;
+            display: none;
+            opacity: 0;
+            // line-height: 0;
+          }
         }
       }
       & .collapseNavBar{
@@ -66,6 +71,7 @@
         flex-basis: auto;
         flex-grow: 1;
         text-align: center;
+        transition: 0.4s linear;
 
         & .link{
           display: flex;
@@ -74,6 +80,7 @@
           flex-direction: row;
           margin-left: auto !important;
           line-height: 36px;
+          transition: 0.4s ease;
 
           & .list{
             margin-right: 1rem !important;
@@ -137,9 +144,92 @@
       }
     }
   }
+
+  & .intro{
+    padding: 3rem 0;
+    background-color: #41A4F5;
+    & .container{
+      margin: auto;
+      padding: 0 15px;
+      max-width: 1200px;
+
+      & .profile{
+        display: flex;
+        flex-direction: row;
+
+        & img{
+          max-width: 240px;
+          margin-right: 3rem;
+          border-radius: 8px;
+          vertical-align: middle;
+          border-style: none;
+          width: 240px;
+          height: 240px;
+        }
+
+        & .textAboutMe{
+          font-size: 20px;
+          color: white;
+          text-align: left;
+
+          & .lead{
+            font-size: 1.25rem;
+            font-weight: 300;
+            font-family: 'Roboto';
+            line-height: 30px;
+          }
+
+          & h2{
+            font-family: 'Roboto';
+            font-weight: 700 !important;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 8px;
+          }
+
+          & .bio{
+            font-family: 'Roboto';
+            line-height: 24px;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+
+            & a{
+              color: #00000080;
+              transition: 0.4s ease;
+              font-family: 'Roboto';
+
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+
+          & .hireme-btn{
+            font-family: 'Roboto';
+            font-size: 1rem;
+            line-height: 24px;
+            border-radius: .25rem;
+            padding: 9.6px 24px;
+            background: rgba(0, 0, 0, 0.301);
+            color: #fff;
+            border: none;
+            font-weight: 700 !important;
+            width: inherit;
+            display: inline-block;
+            text-align: center;
+
+            &:hover{
+              background-color: #174385;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-
+//for toggle action checking and first point break
 @media(max-width: 876px){
   .header{
     width: 100%;
@@ -154,6 +244,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
           }
 
           & .head{
@@ -174,12 +265,29 @@
   
                 & img{
                   margin-right: 0 !important;
+                  vertical-align: middle;
+                  border-style: none;
                 }
               }
             }
           }
 
           & .collapseNavBar{
+            display: none;
+            & .link{
+              display: none;
+              & .list{
+                text-align: start;
+
+                & a{
+                  display: inline-block;
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          & .show.collapseNavBar{
             flex-grow: 0;
             width: 100%;
             display: block;
@@ -200,6 +308,312 @@
             }
           }
         }
+      }
+    }
+
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: 0;
+        max-width: 750px;
+
+        & .profile{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          & img{
+            margin-right: 0;
+          }
+
+          & .textAboutMe{
+            text-align: center;
+
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*Mobile responsive code with tab and ipad iphone all version plus galaxy fold*/
+
+@media(max-width: 768px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: 0 20px;
+        max-width: 600px;
+        & .profile{
+          & img{
+            margin-right: 0 !important;
+          }
+          
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 350px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 414px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 400px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 411px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 400px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .header{
+    & .intro{
+      & .container{
+        margin: 0;
+        max-width: 350px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 360px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 320px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 290px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 540px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 500px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 280px){
+  .header{
+    & .color{
+      & .spacer{
+        padding: 0;
+      }
+    }
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 260px;
+        & .profile{
+          & .textAboutMe{
+            & h2{
+              font-size: 2.5rem;
+            }
+            & .bio{
+              font-size: 14px;
+              line-height: 20px;
+            }
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 150px;
+            height: 150px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(min-width: 1000px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        width: 850px
+      }
+    }
+  }
+}
+
+@media(min-width: 850px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        width: 700px
+      }
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        width: 1150px
       }
     }
   }
