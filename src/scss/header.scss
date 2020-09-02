@@ -218,6 +218,7 @@
             width: inherit;
             display: inline-block;
             text-align: center;
+            transition: 0.6s ease-out;
 
             &:hover{
               background-color: #174385;
