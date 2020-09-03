@@ -275,8 +275,12 @@
 
           & .collapseNavBar{
             display: none;
+            transition: 0.5s linear;
             & .link{
               display: none;
+              height: 0;
+              overflow: hidden;
+              transition: 0.5s linear;
               & .list{
                 text-align: start;
 
@@ -293,17 +297,20 @@
             width: 100%;
             display: block;
             padding: 10px 0;
+            transition: all 0.5s ease;
             & .link{
               margin-left: 0 !important;
               display: inline-flex;
               flex-direction: column;
               flex-grow: 1;
+              height: auto;
               & .list{
                 text-align: start;
 
                 & a{
                   display: inline-block;
                   width: 100%;
+                  height: auto;
                 }
               }
             }

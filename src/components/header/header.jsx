@@ -8,7 +8,7 @@ class HeaderLayout extends React.Component{
     super(props);
     this.buttonToggle = this.buttonToggle.bind(this);
     this.state = {
-      buttonClick : true
+      buttonClick : false
     }
   }
   buttonToggle=(prevState)=>{
