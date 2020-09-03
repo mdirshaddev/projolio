@@ -1,6 +1,10 @@
 import React from 'react';
 import bar from '../../icons/bars.svg';
+
+//stylesheet import
 import '../../scss/header.scss';
+
+//image import
 import i from '../../images/profile.jpg';
 
 class HeaderLayout extends React.Component{
