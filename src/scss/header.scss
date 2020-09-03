@@ -257,6 +257,10 @@
               flex-grow: 0;
               margin-right: 0 !important;
               float: right;
+
+              &:focus{
+                outline: none;
+              }
   
               & .button{
                 // color: #fff !important;
