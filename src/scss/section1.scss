@@ -119,7 +119,7 @@
 
 /*Mobile responsive code*/
 
-@media(max-width: 1030px){
+@media(max-width: 1024px){
   .section1{
     & .container{
       margin: 0 10px;
@@ -235,7 +235,7 @@
 
               & .skillIcon{
                 top: -15%;
-                left: 40%;
+                left: 39%;
               }
             }
           }
@@ -328,6 +328,7 @@
             padding: 0;
 
             & .skillData{
+              padding: 1.5rem;
 
               & .skillIcon{
                 top: -15%;
