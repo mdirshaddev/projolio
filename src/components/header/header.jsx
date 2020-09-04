@@ -1,8 +1,14 @@
 import React from 'react';
 import bar from '../../icons/bars.svg';
 
+//animation on scroll library
+import AOS from 'aos';
+
 //stylesheet import
 import '../../scss/header.scss';
+
+//animation on scroll css file
+import 'aos/dist/aos.css';
 
 //image import
 import i from '../../images/profile.jpg';
@@ -18,6 +24,13 @@ class HeaderLayout extends React.Component{
   buttonToggle=(prevState)=>{
     this.setState((prevState)=> ({buttonClick: !prevState.buttonClick}));
   }
+
+  componentDidMount(){
+    AOS.init({
+      duration: 1500
+    })
+  }
+
   render(){
   return(
     <header className="header">
@@ -107,8 +120,8 @@ class HeaderLayout extends React.Component{
       <div className="intro">
         <div className="container">
           <div className="profile">
-            <img src={i} alt=""/>
-            <div className="textAboutMe">
+            <img data-aos="fade-down" src={i} alt=""/>
+            <div data-aos="fade-up" className="textAboutMe">
               <div className="lead">Hello, My name is </div>
               <h2>Md Irshad</h2>
               <div className="bio">
