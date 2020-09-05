@@ -26,12 +26,13 @@
       color: #58677C;
       line-height: 24px;
       font-weight: 400;
-      text-align: center;
       display: inline-flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      // max-width: 1200px;
+      text-align: justify;
+      text-align-last: center;
+      letter-spacing: -0.3px;
 
       & a{
         color: #41A4F5;
@@ -158,6 +159,9 @@
       
       & .sectionIntroText{
         margin: 0 10px 30px;
+        text-align: justify;
+        text-align-last: center;
+        letter-spacing: -0.3px;
       }
 
       & .sectionSkillBlock{
@@ -237,6 +241,12 @@
                 top: -15%;
                 left: 39%;
               }
+
+              & .skillList{
+                & li{
+                  font-size: 1.2rem;
+                }
+              }
             }
           }
         }
@@ -289,7 +299,7 @@
       & .sectionSkillBlock{
         & .row{
           flex-wrap: wrap;
-          max-width: 330px;
+          max-width: 350px;
 
           & .Card{
             margin-bottom: 3.5rem;
@@ -316,6 +326,9 @@
 
       & .sectionIntroText{
         margin: 0 0 10px;
+        text-align: justify;
+        text-align-last: center;
+        letter-spacing: -0.3px;
       }
 
       & .sectionSkillBlock{
@@ -342,4 +355,11 @@
   }
 }
 
-
+@media(min-width: 1200px){
+  .section1{
+    & .container{
+      margin: auto;
+      max-width: 1050px;
+    }
+  }
+}

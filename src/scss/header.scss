@@ -1,5 +1,6 @@
 @import './default';
 
+
 .header{
   & .color{
     background-color: #0a71c6;
@@ -26,6 +27,8 @@
               display: inline-block;
               margin-right: .5rem;
               transition: 0.8s linear;
+              cursor: pointer;
+              outline-style: transparent;
               
               & a{
                 width: 36px;
@@ -38,9 +41,12 @@
                 transition: all 0.4s ease-in-out;
                 color: #fff !important;
                 line-height: 25px;
-  
-                &:hover{
+                pointer-events: visible;
+                
+        
+                &:hover, &:active, &:focus{
                   background: rgba(0,0,0,0.2);
+                  outline: none;
                 }
   
                 & .svg-inline--fa{
@@ -193,9 +199,12 @@
             font-size: 1rem;
             font-weight: 400;
             margin-bottom: 1rem;
+            text-align: justify;
+            text-align-last: start;
+            letter-spacing: -0.3px;
 
             & a{
-              color: #00000080;
+              color: #0c0c0c86;
               transition: 0.4s ease;
               font-family: 'Roboto';
 
@@ -369,6 +378,11 @@
           }
           
           & .textAboutMe{
+            & .bio{
+              text-align: justify;
+              text-align-last: center;
+              letter-spacing: -0.3px;
+            }
             & .hireme-btn{
               width: 100%;
             }
@@ -624,10 +638,16 @@
 
 @media(min-width: 1200px){
   .header{
+    & .color{
+      & .spacer{
+        margin: auto;
+        max-width: 1050px;
+      }
+    }
     & .intro{
       & .container{
         margin: auto;
-        width: 1150px
+        width: 1050px
       }
     }
   }
