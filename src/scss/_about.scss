@@ -1,0 +1,207 @@
+.about {
+  background-color: #41a4f5;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.content {
+  @include for-size(phone-only) {
+    padding: 0 20px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    margin: auto;
+    padding: 0 60px;
+  }
+
+  @include for-size(desktop-up) {
+    margin: 0 auto;
+  }
+
+  @include for-size(big-desktop-up) {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+}
+
+
+.content .profile {
+  display: flex;
+
+  @include for-size(phone-only) {
+    flex-direction: column;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    flex-direction: column;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    flex-direction: row;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  @include for-size(desktop-up) {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  @include for-size(big-desktop-up) {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+.profile img {
+  @include for-size(phone-only) {
+    margin: auto;
+    max-width: 240px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    margin: auto;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    margin: 0;
+    margin-right: 3rem;
+  }
+
+  @include for-size(desktop-up) {
+    margin-right: 3rem;
+  }
+
+  @include for-size(big-desktop-up) {
+    margin-right: 1.3rem;
+  }
+
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+}
+
+
+.profile .textAboutMe {
+  font-size: 20px;
+  color: white;
+
+  @include for-size(phone-only) {
+    text-align: center;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    text-align: center;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    text-align: justify;
+    max-width: 760px;
+  }
+
+  @include for-size(desktop-up) {
+    max-width: 900px;
+  }
+
+  @include for-size(big-desktop-up) {
+    margin: auto;
+  }
+}
+
+.profile .lead {
+  font-size: 1.25rem;
+  font-weight: $font3;
+  font-family: 'Roboto';
+  line-height: 30px;
+}
+
+.profile h2 {
+  font-family: 'Roboto';
+  font-weight: 700 !important;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.profile .bio p {
+  font-family: 'Roboto';
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: -0.3px;
+  text-align: justify;
+  text-align-last: start;
+
+  @include for-size(phone-only) {
+    text-align: justify;
+    letter-spacing: -0.5px;
+
+    & a {
+      margin: 0 5px;
+      color: $aLink;
+      transition: 0.5s ease;
+      white-space: pre;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include for-size(tablet-portrait-up) {
+    text-align: justify;
+    letter-spacing: -0.5px;
+
+    & a {
+      margin: 0 5px;
+      color: $aLink;
+      transition: 0.5s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include for-size(desktop-up) {}
+}
+
+.hireme-btn {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  line-height: 24px;
+  border-radius: .25rem;
+  padding: 9.6px 24px;
+  background: rgba(0, 0, 0, 0.301);
+  color: #fff;
+  border: none;
+  font-weight: 700 !important;
+  width: inherit;
+
+  @include for-size(phone-only) {
+    display: block;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    display: block;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    display: inline-block;
+  }
+
+  text-align: center;
+  transition: 0.6s ease-out;
+
+  &:hover {
+    background-color: #174385;
+  }
+}

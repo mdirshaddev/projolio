@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OtherImg from '../../icons/other-skills-icon.svg';
+import OtherImg from '../../icons/skillLogo/other-skills-icon.svg';
 
 const OtherCard = () => (
   <div className="Card" data-aos="fade-up">

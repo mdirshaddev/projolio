@@ -1,0 +1,279 @@
+.header {
+  overflow: hidden;
+  max-width: 100%;
+  background-color: rgb(10, 114, 199);
+
+  @include for-size(phone-only) {
+    height: 50px;
+    transition: height 0.6s ease;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    height: 50px;
+    transition: height 0.6s ease;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    min-height: auto;
+  }
+
+  @include for-size(desktop-up) {
+    min-height: auto;
+  }
+
+  @include for-size(big-desktop-up) {
+    min-height: auto;
+  }
+}
+
+.container-fluid .nav {
+  padding: 0.5rem 1rem;
+
+  @include for-size(phone-only) {
+    height: 0;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    display: flex;
+  }
+
+  @include for-size(desktop-up) {
+    display: flex;
+  }
+
+  @include for-size(big-desktop-up) {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
+
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo ul {
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+
+  & li {
+    margin-right: 0.5rem;
+
+    a {
+
+      width: 36px;
+      height: 36px;
+      padding-top: 10px;
+      text-align: center;
+      display: inline-block; //important 🧑 to setting up width and height
+      transition: 0.5s ease;
+      border-radius: 50%;
+
+      &:hover {
+        background: rgba(82, 82, 82, 0.5);
+      }
+    }
+  }
+}
+
+//svg icons width and height
+.SVG {
+  width: 1rem;
+  height: 1rem;
+  color: white;
+}
+
+
+.toggle-btn {
+
+  @include for-size(phone-only) {
+
+    display: block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    border: none;
+
+  }
+
+  @include for-size(tablet-portrait-up) {
+
+    display: block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    border: none;
+
+  }
+
+  @include for-size(tablet-landscape-up) {
+
+    display: none;
+
+  }
+
+  @include for-size(desktop-up) {
+
+    display: none;
+
+  }
+
+
+  //toggle bars bar
+  & .bar {
+
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: rgb(255, 255, 255);
+
+  }
+}
+
+.navLink {
+
+  @include for-size(desktop-up) {
+
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+
+  }
+
+  @include for-size(tablet-landscape-up) {
+
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+
+  }
+
+  @include for-size(phone-only) {
+    height: 0;
+  }
+
+  & ul {
+
+
+    @include for-size(phone-up) {
+
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    @include for-size(tablet-landscape-up) {
+
+      display: flex;
+      margin-left: auto;
+
+    }
+
+    @include for-size(desktop-up) {
+
+      display: flex;
+      margin-left: auto;
+
+    }
+
+
+    & li {
+
+      padding: 8px;
+
+      @include for-size(desktop-up) {
+
+        margin-right: 0.8rem;
+
+      }
+
+      & .link {
+
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-weight: $font6;
+        color: $textColorG;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+
+        @include for-size(phone-only) {
+
+          text-align: start;
+          padding-top: 7px;
+
+        }
+
+        @include for-size(tablet-portrait-up) {
+
+          text-align: start;
+          padding-top: 7px;
+
+        }
+
+        @include for-size(tablet-landscape-up) {
+
+          padding-top: 2px;
+          text-align: center;
+          align-items: center;
+
+        }
+
+        @include for-size(desktop-up) {
+
+          padding-top: 2px;
+          text-align: center;
+          align-items: center;
+
+        }
+
+        @include for-size(big-desktop-up) {
+
+          padding-top: 2px;
+          text-align: center;
+          align-items: center;
+
+        }
+
+        border-radius: 4px;
+        transition: all 0.5s ease;
+
+        &:hover {
+
+          color: $textColorW;
+
+        }
+      }
+
+      & .active {
+
+        color: $textColorW;
+
+      }
+
+      & .dropdown {
+
+        &::after {
+
+          content: "";
+          display: inline-block;
+          margin-left: .355em;
+          vertical-align: .255em;
+          border-top: .3em solid;
+          border-right: .3em solid transparent;
+          border-bottom: 0;
+          border-left: .3em solid transparent;
+
+        }
+      }
+    }
+  }
+}
+
+.showNav {
+  height: 332px;
+}

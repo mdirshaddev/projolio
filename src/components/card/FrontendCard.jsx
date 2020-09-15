@@ -2,7 +2,7 @@ import React from 'react';
 
 
 //image Import
-import FrontendImg from '../../icons/frontend-icon.svg';
+import FrontendImg from '../../icons/skillLogo/frontend-icon.svg';
 
 const Frontend = () => (
   <div className="Card" data-aos="fade-up">

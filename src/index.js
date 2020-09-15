@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './scss/defaults.scss';
-import App from './App';
+import App from './BaseApp';
+
+//stylesheet import
+import './scss/main.scss';
 
 ReactDOM.render(
   <React.Fragment>

@@ -1,0 +1,89 @@
+.footer{
+  padding: 3rem 0;
+  background-color: #41a4f5;
+  overflow: hidden;
+
+  & .container{
+    margin: 0 104.5px;
+    padding: 0 15px;
+
+    @include for-size(phone-only){
+      margin:  auto;
+    }
+
+    @include for-size(tablet-portrait-up){
+      margin: auto;
+    }
+
+    @include for-size(desktop-up){
+      margin: auto;
+      max-width: 1050px;
+    }
+
+    & .textMe{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      & img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+      }
+
+      & .textInfo{
+        font-family: "Roboto";
+        color: #fff;
+
+        @include for-size(tablet-portrait-up){
+          margin: 0 5rem;
+        }
+
+        @include for-size(tablet-landscape-up){
+          margin: 0 7rem;
+        }
+
+        & h2{
+          line-height: 1.3;
+          margin-bottom: .5rem;
+
+          @include for-size(phone-only){
+            font-size: 1.3rem;
+          }
+
+          @include for-size(tablet-portrait-up){
+            font-size: 1.5rem;
+          }
+
+          @include for-size(tablet-landscape-up){
+            font-size: 1.7rem;
+          }
+        }
+
+        &-bottom{
+
+          @include for-size(phone-only){
+            margin: 0 20px 10px;
+          }
+
+          @include for-size(desktop){
+            margin: 0 200px 10px;
+            padding: 0 40px;
+          }
+
+          & a{
+            color: rgba(0,0,0,.5);
+            transition: .6s;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

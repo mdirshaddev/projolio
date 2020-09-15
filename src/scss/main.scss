@@ -1,7 +1,36 @@
-.mainLayout{
+@import './default';
+@import './variable';
+@import './header';
+@import './about';
+@import './section';
+@import './card';
+@import './footer';
+
+.Layout {
   display: flex;
   flex-direction: column;
-  position: relative;
-  min-width: auto;
-  min-height: 100vh;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #F7F8FA;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-topBottom {
+  padding: 3rem 0;
 }

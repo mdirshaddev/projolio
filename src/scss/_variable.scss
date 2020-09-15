@@ -1,0 +1,44 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+//variables
+$bgColor: #41A4f5;
+$aLink: #0c0c0c86;
+$fontFamily: "Roboto", sans-serif;
+$textColorW: white;
+$textColorB: #41a4f5;
+$textColorG: #FFFFFF60;
+$font3: 300;
+$font6: 600;
+$font4: 400;
+$font5: 500;
+
+
+//for making sure the website is responsive to every category of devices.
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  }
+  @else if $size == tablet-portrait-up {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+  @else if $size == tablet-landscape-up {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+  @else if $size == desktop-up {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @else if $size == big-desktop-up {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}

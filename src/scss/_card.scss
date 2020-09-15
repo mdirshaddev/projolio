@@ -1,0 +1,116 @@
+.Card {
+  position: relative;
+  width: 100%;
+
+  @include for-size(phone-only) {
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    padding: 0;
+    margin: 30px 0;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    padding: 0 15px;
+  }
+
+  @include for-size(desktop-up) {
+    padding: 0 15px;
+  }
+
+  @include for-size(big-desktop-up) {
+    padding: 0 15px;
+  }
+
+  & .skillData {
+    @include for-size(phone-only){
+      padding: 1.5rem 2rem;
+    }
+
+    @include for-size(tablet-portrait-up){
+      padding: 1.5rem 5rem;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    @include for-size(tablet-landscape-up){
+      padding: 1rem 1.3rem;
+      margin: 0 auto;
+    }
+
+    @include for-size(desktop-up){
+      padding: 1rem 2rem;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+      box-shadow: -1px 5px 6px 4px rgba(92, 92, 92, 0.075);
+    }
+
+    & h4 {
+      font-family: 'Roboto';
+      font-size: 20px;
+      margin: 48px 0 16px;
+      text-align: center;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    & .skillIcon {
+      position: absolute;
+      top: -14%;
+      left: 39%;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #41A4F5;
+
+      & img {
+        position: relative;
+        transform: translate(41%, 54%);
+      }
+    }
+
+    & .skillList {
+      margin: 0 0 1rem 0;
+
+      @include for-size(tablet-portrait-up){
+        margin: 0 0 1rem 0;
+      }
+
+      @include for-size(tablet-landscape-up){
+        margin: 0 0 1rem 5rem;
+      }
+
+      @include for-size(desktop-up){
+        margin: 0 0 1rem 0;
+      }
+
+      & li {
+        display: flex;
+        align-items: center;
+        margin: 0 0 8px 0;
+        line-height: 24px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 20px;
+        pointer-events: none;
+
+        & svg {
+          margin-right: 8px;
+          width: 1em;
+          color: #41A4F5;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-import BackendImg from '../../icons/backend-icon.svg';
+import BackendImg from '../../icons/skillLogo/backend-icon.svg';
 
 const Backend = () => (
   <div className="Card" data-aos="fade-up">
