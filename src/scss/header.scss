@@ -1,0 +1,656 @@
+@import './default';
+
+
+.header{
+  & .color{
+    background-color: #0a71c6;
+
+    & .spacer{
+      width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+
+      & .nav{
+        position: relative;
+        padding: .5rem 1rem;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: 0.5s linear;
+
+        & .head{
+          .social{
+            margin-bottom: 0;
+  
+            & .list{
+              display: inline-block;
+              margin-right: .5rem;
+              transition: 0.8s linear;
+              cursor: pointer;
+              outline-style: transparent;
+              
+              & a{
+                width: 36px;
+                height: 36px;
+                padding-top: 7px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                -webkit-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+                color: #fff !important;
+                line-height: 25px;
+                pointer-events: visible;
+                cursor: pointer;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                
+        
+                &:hover, &:active, &:focus{
+                  background: rgba(0,0,0,0.2);
+                  outline: none;
+                }
+  
+                & .svg-inline--fa{
+                  display: inline-block;
+                  font-size: inherit;
+                  height: 1em;
+                  overflow: visible;
+                  vertical-align: -.125em;
+                }
+              }
+            }
+          }
+        }
+
+        & .head{
+          .toggle-btn{
+            border: none;
+            background: transparent;
+            display: none;
+            opacity: 0;
+            line-height: 0; //to make this toggle button align in the middle
+          }
+        }
+      }
+      & .collapseNavBar{
+        font-size: 0.875rem;
+        display: flex !important;
+        flex-basis: auto;
+        flex-grow: 1;
+        text-align: center;
+        transition: 0.4s linear;
+
+        & .link{
+          display: flex;
+          padding-left: 0;
+          margin-bottom: 0;
+          flex-direction: row;
+          margin-left: auto !important;
+          line-height: 36px;
+          transition: 0.4s ease;
+
+          & .list{
+            margin-right: 1rem !important;
+
+            & a{
+              padding: .5rem;
+              line-height: 21px;
+              font-weight: 500;
+              color: #ffffffbf !important;
+              font-family: 'Roboto';
+              text-transform: uppercase;
+              transition: 0.6s ease;
+
+              &:hover{
+                color: #ffffff80 !important;
+              }
+            }
+
+            & .active{
+              color: #fff !important;
+            }
+
+            & .dropdown{
+              &::after{
+                display: inline-block;
+                margin-left: .255em;
+                vertical-align: .255em;
+                content: "";
+                border-top: .3em solid;
+                border-right: .3em solid transparent;
+                border-bottom: 0;
+                border-left: .3em solid transparent;
+              }
+            }
+
+            & .dropdown-menu{
+              position: absolute;
+              top: 100%;
+              left: 0;
+              z-index: 1000;
+              display: none;
+              float: left;
+              min-width: 10rem;
+              padding: .5rem 0;
+              margin: .125rem 0 0;
+              font-size: 1rem;
+              color: #434E5E;
+              text-align: left;
+              list-style: none;
+              background-color: #fff;
+              background-clip: padding-box;
+              border: 1px solid rgba(0,0,0,0.15);
+              border-radius: .25rem;
+            }
+          }
+
+          & .last{
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  & .intro{
+    padding: 3rem 0;
+    background-color: #41A4F5;
+    & .container{
+      margin: auto;
+      padding: 0 15px;
+      max-width: 1200px;
+
+      & .profile{
+        display: flex;
+        flex-direction: row;
+
+        & img{
+          max-width: 240px;
+          margin-right: 3rem;
+          border-radius: 8px;
+          vertical-align: middle;
+          border-style: none;
+          width: 240px;
+          height: 240px;
+        }
+
+        & .textAboutMe{
+          font-size: 20px;
+          color: white;
+          text-align: left;
+
+          & .lead{
+            font-size: 1.25rem;
+            font-weight: 300;
+            font-family: 'Roboto';
+            line-height: 30px;
+          }
+
+          & h2{
+            font-family: 'Roboto';
+            font-weight: 700 !important;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 8px;
+          }
+
+          & .bio{
+            font-family: 'Roboto';
+            line-height: 24px;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-align: justify;
+            text-align-last: start;
+            letter-spacing: -0.3px;
+
+            & a{
+              color: #0c0c0c86;
+              transition: 0.4s ease;
+              font-family: 'Roboto';
+
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+
+          & .hireme-btn{
+            font-family: 'Roboto';
+            font-size: 1rem;
+            line-height: 24px;
+            border-radius: .25rem;
+            padding: 9.6px 24px;
+            background: rgba(0, 0, 0, 0.301);
+            color: #fff;
+            border: none;
+            font-weight: 700 !important;
+            width: inherit;
+            display: inline-block;
+            text-align: center;
+            transition: 0.6s ease-out;
+
+            &:hover{
+              background-color: #174385;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//for toggle action checking and first point break
+@media(max-width: 876px){
+  .header{
+    width: 100%;
+    overflow: hidden;
+    & .color{
+      & .spacer{
+        & .nav{
+          position: relative;
+          justify-content: space-between;
+
+          & .head{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          & .head{
+
+            & .toggle-btn{
+              display: block;
+              opacity: 1;
+              text-align: end;
+              flex-grow: 0;
+              margin-right: 0 !important;
+              float: right;
+              cursor: pointer;
+
+              &:focus{
+                outline: none;
+                outline-color: transparent;
+              }
+  
+              & .button{
+                // color: #fff !important;
+                display: inline-flex;
+                align-items: center;
+                text-align: center;
+  
+                & img{
+                  margin-right: 0 !important;
+                  vertical-align: middle;
+                  border-style: none;
+                }
+              }
+            }
+          }
+
+          & .collapseNavBar{
+            display: none;
+            transition: 0.5s linear;
+            & .link{
+              display: none;
+              height: 0;
+              overflow: hidden;
+              transition: 0.5s linear;
+              & .list{
+                text-align: start;
+
+                & a{
+                  display: inline-block;
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          & .show.collapseNavBar{
+            flex-grow: 0;
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            transition: all 0.5s ease;
+            & .link{
+              margin-left: 0 !important;
+              display: inline-flex;
+              flex-direction: column;
+              flex-grow: 1;
+              height: auto;
+              & .list{
+                text-align: start;
+
+                & a{
+                  display: inline-block;
+                  width: 100%;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: 0;
+        max-width: 750px;
+
+        & .profile{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          & img{
+            margin-right: 0;
+          }
+
+          & .textAboutMe{
+            text-align: center;
+
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*Mobile responsive code with tab and ipad iphone all version plus galaxy fold*/
+
+@media(max-width: 768px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: 0 20px;
+        max-width: 600px;
+        & .profile{
+          & img{
+            margin-right: 0 !important;
+          }
+          
+          & .textAboutMe{
+            & .bio{
+              text-align: justify;
+              text-align-last: center;
+              letter-spacing: -0.3px;
+            }
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 350px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 414px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 400px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 411px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 400px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .header{
+    & .intro{
+      & .container{
+        margin: 0;
+        max-width: 350px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 360px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 320px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 320px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 290px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 540px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 500px;
+        & .profile{
+          & .textAboutMe{
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 200px;
+            height: 200px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 280px){
+  .header{
+    & .color{
+      & .spacer{
+        padding: 0;
+      }
+    }
+    & .intro{
+      & .container{
+        margin: auto;
+        padding: auto;
+        max-width: 260px;
+        & .profile{
+          & .textAboutMe{
+            & h2{
+              font-size: 2.5rem;
+            }
+            & .bio{
+              font-size: 14px;
+              line-height: 20px;
+            }
+            & .hireme-btn{
+              width: 100%;
+            }
+          }
+          & .bio{
+            text-align: center;
+          }
+          & img{
+            width: 150px;
+            height: 150px;
+            margin-right: 0rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(min-width: 1000px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        width: 850px
+      }
+    }
+  }
+}
+
+@media(min-width: 850px){
+  .header{
+    & .intro{
+      & .container{
+        margin: auto;
+        width: 700px
+      }
+    }
+  }
+}
+
+@media(min-width: 1440px){
+  .header{
+    & .color{
+      & .spacer{
+        margin: auto;
+        max-width: 1100px;
+      }
+    }
+    & .intro{
+      & .container{
+        margin: auto;
+        width: 1050px
+      }
+    }
+  }
+}
