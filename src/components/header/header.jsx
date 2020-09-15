@@ -25,7 +25,7 @@ class HeaderLayout extends React.Component{
   render(){
     return(
       <header className={this.state.isOpen ? "header showNav": "header" }>
-        <div className="container-fluid">
+        <div className="container-fluid" >
           <nav className={this.state.isOpen ? "nav showNav" : "nav"}>
             <div className="logo">
               <LogoList />

@@ -2,6 +2,9 @@
   overflow: hidden;
   max-width: 100%;
   background-color: rgb(10, 114, 199);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 
   @include for-size(phone-only) {
     height: 50px;

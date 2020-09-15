@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavLinkList = () => (
   <ul>
-    <li><NavLink to="/about" activeClassName="active" className="link">About</NavLink></li>
+    <li><NavLink to="/portfolio/about" activeClassName="active" className="link">About</NavLink></li>
     <li><NavLink to="/projects" activeClassName="active" className="link">Projects</NavLink></li>
     <li><NavLink to="/tasks" activeClassName="active" className="link">Talks</NavLink></li>
     <li><NavLink to="/blogs" activeClassName="active" className="link">Blogs</NavLink></li>

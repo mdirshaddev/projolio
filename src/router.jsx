@@ -11,7 +11,7 @@ const BaseRouter = () => (
   <>
   <Router>
     <HeaderLayout />
-    <Route path="/about" exact component={AboutPage} />
+    <Route path="/portfolio/about" exact component={AboutPage} />
     <FooterLayout />
   </Router>
   </>

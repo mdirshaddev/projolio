@@ -51,7 +51,7 @@
           margin-bottom: .5rem;
 
           @include for-size(phone-only){
-            font-size: 1rem;
+            font-size: 1.04rem;
           }
 
           @include for-size(tablet-portrait-up){
@@ -66,7 +66,7 @@
         &-bottom{
 
           @include for-size(phone-only){
-            margin: 0 20px 10px;
+            margin: 0 5px 10px;
           }
 
           @include for-size(desktop){
